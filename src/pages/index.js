@@ -8,12 +8,12 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <section className=" bg-primary_bg_clr py-[5rem] md:py-[0rem] h-fit md:h-[100vh] w-full text-white flex items-center relative">
-        <div className="max-w-[1200px] mx-auto p-[1rem] md:p-[0rem]">
+      <section className="header sm:w-full bg-primary_bg_clr py-[5rem] md:py-[0rem] h-fit md:h-[100vh] w-[100%] overflow-hidden text-white flex items-center relative">
+        <div className="max-w-[1200px] w-full mx-auto p-[1rem] md:p-[0rem]">
           <h1 className="hero-text text-[45px]  md:text-[112px]  font-bold leading-[110.5%] tracking-widest">
-            frontend developer.
+            FRONTEND DEVELOPER.
           </h1>
-          <p className="text-[16px] font-regular text-text_dsc_clr w-full md:w-[731px] mt-[20px]">
+          <p className="text-[16px] font-light text-white w-full md:w-[731px] mt-[20px]">
             Hello, I&apos;m <span className="text-text_accent">John Ossai</span>
             , a passionate and innovative frontend developer who transforms
             ideas into captivating digital experiences. With a dynamic career
@@ -27,7 +27,7 @@ export default function Home() {
       </section>
       {/* //Projects Section */}
       <section className="h-fit h-[150vh] py-[5rem] md:py-[0rem] bg-[#282828] flex items-center">
-        <div className="w-full">
+        {/* <div className="w-full">
           <div className="max-w-[1200px] mx-auto p-[1rem]">
             <h1 className="hero-text text-[45px] text-white md:text-[112px]  font-bold leading-[110.5%] tracking-widest">
               projects highlights.
@@ -37,7 +37,7 @@ export default function Home() {
           <div className="grid max-w-[1200px] mx-auto">
             <div className="flex items-center border-r-[1px] border-[#847c7c] h-[300px] p-[1rem]">
               <div>
-                <p className="text-text_dsc_clr text-justify">
+                <p className="text-text_dstec_clr xt-justify">
                   Explore my portfolio of handpicked project highlights, each a
                   testament to my dedication to creating exceptional digital
                   experiences. From sleek and responsive user interfaces to
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full h-[1px] bg-text_dsc_clr "></div>
-        </div>
+        </div> */}
       </section>
     </>
   );

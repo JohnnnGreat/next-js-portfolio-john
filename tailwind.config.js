@@ -14,10 +14,18 @@ module.exports = {
       },
 
       colors: {
-        primary_bg_clr: "#202020",
+        primary_bg_clr: "#141414",
         text_clr: "#ffffff",
         text_dsc_clr: "#847c7c",
         text_accent: "#0047ff",
+      },
+
+      screens: {
+        xs: "320px", // Custom screen size for extra small devices
+        sm: "320px", // Custom screen size for small devices
+        md: "768px", // Custom screen size for medium devices
+        lg: "1024px", // Custom screen size for large devices
+        xl: "1280px", // Custom screen size for extra large devices
       },
     },
   },
