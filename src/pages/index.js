@@ -14,10 +14,10 @@ export default function Home() {
             frontend developer.
           </h1>
           <p className="text-[16px] font-regular text-text_dsc_clr w-full md:w-[731px] mt-[20px]">
-            Hello, I'm <span className="text-text_accent">John Ossai</span>, a
-            passionate and innovative frontend developer who transforms ideas
-            into captivating digital experiences. With a dynamic career spanning
-            two years in the ever-evolving world of web development.
+            Hello, I&apos;m <span className="text-text_accent">John Ossai</span>
+            , a passionate and innovative frontend developer who transforms
+            ideas into captivating digital experiences. With a dynamic career
+            spanning two years in the ever-evolving world of web development.
           </p>
 
           <div className="absolute bottom-[10px]">
@@ -49,7 +49,11 @@ export default function Home() {
                   href="/projects"
                 >
                   <p className="text-white">VIEW MORE PROJECTS</p>
-                  <Image className="w-auto" src={arrow}></Image>
+                  <Image
+                    alt="Line Image"
+                    className="w-auto"
+                    src={arrow}
+                  ></Image>
                 </Link>
               </div>
             </div>
@@ -59,7 +63,11 @@ export default function Home() {
                   className="mt-[1.6rem] absolute top-[1rem] right-[1rem] grow  py-[.7rem] px-[1rem] "
                   href="/projects"
                 >
-                  <Image className="w-auto" src={arrow}></Image>
+                  <Image
+                    alt="Line Image"
+                    className="w-auto"
+                    src={arrow}
+                  ></Image>
                 </Link>
                 <p className="text-text_dsc_clr  mt-[5rem] text-justify">
                   My past projects spans across developing intuitive websites,
