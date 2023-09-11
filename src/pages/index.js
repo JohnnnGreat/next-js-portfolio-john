@@ -15,7 +15,7 @@ export default function Home() {
           <h1 className="hero-text text-[45px]  md:text-[112px]  font-bold leading-[110.5%] tracking-widest">
             FRONTEND DEVELOPER.
           </h1>
-          <p className="text-[15px] md:text-[16px] font-light text-white w-full md:w-[731px] mt-[20px]">
+          <p className="text-[15px] md:text-[16px] font-light text-white w-full md:w-[731px] mt-[1.6rem]">
             Hello, I&apos;m <span className="text-text_accent">John Ossai</span>
             , a passionate and innovative frontend developer who transforms
             ideas into captivating digital experiences. With a dynamic career
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </section>
       {/* //Projects Section */}
-      <section className="h-fit overflow-hidden h-[150vh] py-[5rem] md:py-[0rem] bg-[#282828] flex items-center">
+      <section className="h-fit overflow-hidden h-[120vh] py-[5rem] md:py-[0rem] bg-[#1a1a1a] flex items-center">
         <div className="w-full">
           <div className="max-w-[1100px]  mx-auto p-[1rem] md:p-[0rem]">
             <h1
@@ -47,7 +47,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="w-full h-[1px] bg-text_dsc_clr mt-[1.7rem]"></div>
-          <div className="grid max-w-[1200px] mx-auto">
+          <div className="grid max-w-[1100px] mx-auto">
             <div className="flex items-center border-r-[1px] border-[#847c7c] h-[300px] p-[1rem]">
               <div>
                 <p className="text-justify text-text_dsc_clr font-[400] text-[15px] md:text-[16px] md:font[16px]">
@@ -70,10 +70,10 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="flex items-center relative  p-[1rem]">
+            <div className="flex items-center border-t-[1px] border-red-500 md:border-[0] relative p-[1rem]">
               <div className="flex flex-col">
                 <Link
-                  className="mt-[1.6rem] absolute top-[1rem] right-[1rem] grow  py-[.7rem] px-[1rem] "
+                  className="mt-[1.6rem] absolute top-[1rem]  right-[1rem] grow  py-[.7rem] px-[1rem] "
                   href="/projects"
                 >
                   <Image
