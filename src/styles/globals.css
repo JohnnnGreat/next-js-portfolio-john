@@ -32,7 +32,6 @@
 p {
   font-family: "Raleway", sans-serif;
   font-weight: regular;
-  font-size: 1rem;
 }
 
 .link {
@@ -48,11 +47,5 @@ ul {
 }
 
 body {
-  background: red;
-  width: 100% !important;
-}
-
-html {
-  background: green;
-  width: 100%;
+  background: #141414;
 }

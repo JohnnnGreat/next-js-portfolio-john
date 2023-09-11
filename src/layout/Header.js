@@ -2,8 +2,11 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="h-[900px] bg-green-400">
-      <div className="max-w-[1200px] mx-auto">This is header</div>
+    <div className="header text-red-500 fixed top-0 w-full ">
+      <div className="max-w-[1200px] mx-auto p-[1rem] flex items-center justify-between">
+        <h1 className="text-white">John O.</h1>
+        <button className="text-white">Open</button>
+      </div>
     </div>
   );
 }

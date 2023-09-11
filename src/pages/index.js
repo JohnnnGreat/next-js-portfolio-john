@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <section className="header sm:w-full bg-primary_bg_clr py-[5rem] md:py-[0rem] h-fit md:h-[100vh] w-[100%] overflow-hidden text-white flex items-center relative">
+      <section className="sm:w-full bg-primary_bg_clr py-[5rem] md:py-[0rem] h-fit md:h-[100vh] w-[100%] overflow-hidden text-white flex items-center relative">
         <div className="max-w-[1200px] w-full mx-auto p-[1rem] md:p-[0rem]">
           <h1 className="hero-text text-[45px]  md:text-[112px]  font-bold leading-[110.5%] tracking-widest">
             FRONTEND DEVELOPER.
@@ -27,9 +27,9 @@ export default function Home() {
       </section>
       {/* //Projects Section */}
       <section className="h-fit h-[150vh] py-[5rem] md:py-[0rem] bg-[#282828] flex items-center">
-        {/* <div className="w-full">
-          <div className="max-w-[1200px] mx-auto p-[1rem]">
-            <h1 className="hero-text text-[45px] text-white md:text-[112px]  font-bold leading-[110.5%] tracking-widest">
+        <div className="w-full">
+          <div className="max-w-[1200px]  mx-auto p-[1rem]">
+            <h1 className="hero-text text-[45px] text-white md:text-[112px] font-bold leading-[110.5%] ">
               projects highlights.
             </h1>
           </div>
@@ -37,7 +37,7 @@ export default function Home() {
           <div className="grid max-w-[1200px] mx-auto">
             <div className="flex items-center border-r-[1px] border-[#847c7c] h-[300px] p-[1rem]">
               <div>
-                <p className="text-text_dstec_clr xt-justify">
+                <p className="text-justify text-white font-[200] font-[90px] md:font[16px]">
                   Explore my portfolio of handpicked project highlights, each a
                   testament to my dedication to creating exceptional digital
                   experiences. From sleek and responsive user interfaces to
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full h-[1px] bg-text_dsc_clr "></div>
-        </div> */}
+        </div>
       </section>
     </>
   );
