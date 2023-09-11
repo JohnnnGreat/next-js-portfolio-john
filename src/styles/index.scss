@@ -7,26 +7,28 @@ $text_accent: #0047ff;
 
 .hero-text {
   font-family: MADE OUTER, sans-serif;
-  text-shadow: 4px 0 0.7rem rgb(0, 81, 255), -4px 0 0.7rem rgb(255, 0, 212);
-  animation: shadow 5s infinite;
+  //   text-shadow: 4px 0 0.7rem rgb(0, 81, 255), -4px 0 0.7rem rgb(255, 0, 212);
+  //   animation: shadow 5s infinite;
 
-  @keyframes shadow {
-    0% {
-      text-shadow: 4px 0 0.7rem rgb(0, 81, 255), -4px 0 0.7rem rgb(255, 0, 212);
-    }
+  //   @keyframes shadow {
+  //     0% {
+  //       text-shadow: 4px 0 0.7rem rgb(0, 81, 255), -4px 0 0.7rem rgb(255, 0, 212);
+  //     }
 
-    50% {
-      text-shadow: -4px 0 0.7rem rgb(255, 0, 212), 4px 0 0.7rem rgb(0, 81, 255);
-    }
+  //     50% {
+  //       text-shadow: -4px 0 0.7rem rgb(255, 0, 212), 4px 0 0.7rem rgb(0, 81, 255);
+  //     }
 
-    100% {
-      text-shadow: 4px 0 0.7rem rgb(0, 81, 255), -4px 0 0.7rem rgb(255, 0, 212);
-    }
-  }
+  //     100% {
+  //       text-shadow: 4px 0 0.7rem rgb(0, 81, 255), -4px 0 0.7rem rgb(255, 0, 212);
+  //     }
+  //   }
 }
 
 .hero-text-two {
   font-family: MADE OUTER, sans-serif;
+  text-shadow: 4px 0 0.3rem rgb(0, 81, 255), -4px 0 0.3rem rgb(255, 0, 212);
+  letter-spacing: 10px;
 }
 
 .grid {
@@ -45,4 +47,21 @@ $text_accent: #0047ff;
   top: 0;
   width: 100%;
   z-index: 10;
+}
+
+.animation-bl {
+  animation: animate 10s infinite 1s;
+
+  @keyframes animate {
+    0% {
+      transform: translateX(0vw);
+    }
+    50% {
+      transform: translateX(100vw);
+    }
+
+    100% {
+      transform: translateX(0vw);
+    }
+  }
 }

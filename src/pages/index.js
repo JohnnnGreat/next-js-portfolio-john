@@ -1,21 +1,22 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import arrow from "../../public/assets/arrowM.svg";
 import Link from "next/link";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { useEffect, useRef, useLayoutEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <>
       <section className="sm:w-full bg-primary_bg_clr py-[5rem] md:py-[0rem] h-[70vh] md:h-[100vh] w-[100%] overflow-hidden text-white flex items-center relative">
+        <div className="absolute w-[100px] h-[100px] bg-red-500 left-[-2rem] rounded-[1rem] animate-bounce 5"></div>
+        <div className="animation-bl h-[140vh] w-[200px] bg-blue-500 absolute translate-x[50%] translate-x-[-50%] rotate-[-20deg] blur-[70px] opacity-30"></div>
         <div className="max-w-[1100px] w-full mx-auto p-[1rem] md:p-[0rem]">
-          <h1 className="hero-text text-[45px]  md:text-[112px]  font-bold leading-[110.5%] tracking-widest">
+          <h1 className="hero-text relative z-10 text-[45px]  md:text-[112px] font-bold leading-[110.5%] tracking-widest">
             FRONTEND DEVELOPER.
           </h1>
-          <p className="text-[15px] md:text-[16px] font-light text-white w-full md:w-[731px] mt-[1.6rem]">
+          <p className="text-[15px] relative z-10 md:text-[16px] font-light text-text_dsc_clr w-full md:w-[731px] mt-[1.6rem]">
             Hello, I&apos;m <span className="text-text_accent">John Ossai</span>
             , a passionate and innovative frontend developer who transforms
             ideas into captivating digital experiences. With a dynamic career
@@ -28,20 +29,21 @@ export default function Home() {
         </div>
       </section>
       {/* //Projects Section */}
-      <section className="h-fit overflow-hidden h-[120vh] py-[5rem] md:py-[0rem] bg-[#1a1a1a] flex items-center">
+      <div className="h-fit overflow-hidden h-[130vh] py-[5rem] md:py-[0rem] bg-[#1a1a1a] flex items-center">
         <div className="w-full">
           <div className="max-w-[1100px]  mx-auto p-[1rem] md:p-[0rem]">
             <h1
               data-aos="fade-right"
               data-aos-duration="1000"
-              className="hero-text-two text-[45px] text-white md:text-[112px] font-bold leading-[110.5%] "
+              id="text"
+              className="hero-text text-[45px] text-white md:text-[112px] font-bold leading-[110.5%] "
             >
               projects
             </h1>
             <h1
               data-aos="fade-left"
               data-aos-duration="1000"
-              className="hero-text text-[45px] md:text-[112px] font-bold leading-[110.5%] "
+              className="hero-text-two text-[45px] md:text-[112px] font-bold leading-[110.5%] "
             >
               HIGHLIGHTS
             </h1>
@@ -92,7 +94,7 @@ export default function Home() {
           </div>
           <div className="w-full h-[1px] bg-text_dsc_clr "></div>
         </div>
-      </section>
+      </div>
     </>
   );
 }
