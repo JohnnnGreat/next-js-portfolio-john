@@ -30,8 +30,9 @@
 }
 
 p {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: regular;
+  line-height: 1.5;
 }
 
 .link {

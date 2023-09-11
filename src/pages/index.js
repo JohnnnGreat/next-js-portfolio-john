@@ -2,18 +2,20 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import arrow from "../../public/assets/arrowM.svg";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
-      <section className="sm:w-full bg-primary_bg_clr py-[5rem] md:py-[0rem] h-fit md:h-[100vh] w-[100%] overflow-hidden text-white flex items-center relative">
-        <div className="max-w-[1200px] w-full mx-auto p-[1rem] md:p-[0rem]">
+      <section className="sm:w-full bg-primary_bg_clr py-[5rem] md:py-[0rem] h-[70vh] md:h-[100vh] w-[100%] overflow-hidden text-white flex items-center relative">
+        <div className="max-w-[1100px] w-full mx-auto p-[1rem] md:p-[0rem]">
           <h1 className="hero-text text-[45px]  md:text-[112px]  font-bold leading-[110.5%] tracking-widest">
             FRONTEND DEVELOPER.
           </h1>
-          <p className="text-[16px] font-light text-white w-full md:w-[731px] mt-[20px]">
+          <p className="text-[15px] md:text-[16px] font-light text-white w-full md:w-[731px] mt-[20px]">
             Hello, I&apos;m <span className="text-text_accent">John Ossai</span>
             , a passionate and innovative frontend developer who transforms
             ideas into captivating digital experiences. With a dynamic career
@@ -28,16 +30,27 @@ export default function Home() {
       {/* //Projects Section */}
       <section className="h-fit h-[150vh] py-[5rem] md:py-[0rem] bg-[#282828] flex items-center">
         <div className="w-full">
-          <div className="max-w-[1200px]  mx-auto p-[1rem]">
-            <h1 className="hero-text text-[45px] text-white md:text-[112px] font-bold leading-[110.5%] ">
-              projects highlights.
+          <div className="max-w-[1100px]  mx-auto p-[1rem] md:p-[0rem]">
+            <h1
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              className="hero-text-two text-[45px] text-white md:text-[112px] font-bold leading-[110.5%] "
+            >
+              projects
+            </h1>
+            <h1
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              className="hero-text text-[45px] md:text-[112px] font-bold leading-[110.5%] "
+            >
+              HIGHLIGHTS
             </h1>
           </div>
           <div className="w-full h-[1px] bg-text_dsc_clr mt-[1.7rem]"></div>
           <div className="grid max-w-[1200px] mx-auto">
             <div className="flex items-center border-r-[1px] border-[#847c7c] h-[300px] p-[1rem]">
               <div>
-                <p className="text-justify text-white font-[200] font-[90px] md:font[16px]">
+                <p className="text-justify text-white font-[200] text-[15px] md:text-[16px] md:font[16px]">
                   Explore my portfolio of handpicked project highlights, each a
                   testament to my dedication to creating exceptional digital
                   experiences. From sleek and responsive user interfaces to
@@ -57,7 +70,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="flex items-center relative border-t-[1px] border-[#847c7c] p-[1rem]">
+            <div className="flex items-center relative  p-[1rem]">
               <div className="flex flex-col">
                 <Link
                   className="mt-[1.6rem] absolute top-[1rem] right-[1rem] grow  py-[.7rem] px-[1rem] "
