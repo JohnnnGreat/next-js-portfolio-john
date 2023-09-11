@@ -10,8 +10,7 @@ You can reach out to me via email or connect with me on social media:
 
 - Email: johnossai20@gmail.com
 - LinkedIn: [Linkedln](link_to_linkedin_profile)
-<!-- - Twitter: [Your Twitter Profile](link_to_twitter_profile)
-- Portfolio Website: [Your Portfolio Website](link_to_your_portfolio_website) -->
+
 
 Feel free to contact me if you have any questions, collaborations, or job opportunities.
 
