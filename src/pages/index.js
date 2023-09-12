@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </section>
       {/* //Projects Section */}
-      <div className="h-fit overflow-hidden h-[130vh] py-[5rem] md:py-[0rem] bg-[#1a1a1a] flex items-center">
+      <div className="h-fit overflow-hidden h-[130vh] py-[5rem] md:py-[0rem] bg-black flex items-center">
         <div className="w-full">
           <div className="max-w-[1100px]  mx-auto p-[1rem] md:p-[0rem]">
             <h1
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="grid max-w-[1100px] mx-auto">
             <div className="flex items-center border-r-[1px] border-[#847c7c] h-[300px] p-[1rem]">
               <div>
-                <p className="text-justify text-text_dsc_clr font-[400] text-[15px] md:text-[16px] md:font[16px]">
+                <p className="text-justify text-white font-[400] text-[15px] md:text-[16px] md:font[16px]">
                   Explore my portfolio of handpicked project highlights, each a
                   testament to my dedication to creating exceptional digital
                   experiences. From sleek and responsive user interfaces to
@@ -82,7 +82,7 @@ export default function Home() {
                     src={arrow}
                   ></Image>
                 </Link>
-                <p className="text-text_dsc_clr  mt-[5rem] text-justify">
+                <p className="text-whiter  mt-[5rem] text-justify">
                   My past projects spans across developing intuitive websites,
                   designing websites prototypes, an user interface designs for
                   future projects.
