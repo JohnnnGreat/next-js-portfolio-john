@@ -9,15 +9,16 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <>
-      <section className="sm:w-full bg-black py-[5rem] md:py-[0rem] h-[100vh] md:h-full md:p-[4rem] w-[100%] overflow-hidden text-white flex items-center relative">
+      <section className="home sm:w-full bg-black py-[5rem] md:py-[0rem] h-[100vh] md:h-[100vh] w-[100%] overflow-hidden text-white flex items-center relative">
+        <div className="w-[500px] opacity-70 absolute top-[-8rem] right-[-8rem] h-[500px] rounded-[100%] bg-blue-500 blur-[6rem]"></div>
         <div className="max-w-[1100px] w-full mx-auto p-[1rem] md:p-[0rem]">
-          <h1 className="uppercase text-[16px] text-center text-gray-500  pl-[4px]  font-[600] tracking-widest">
-            Hello, I&apos;m
+          <h1 className="text-[16px] leading-[0] text-center text-white  pl-[4px]  font-[600] ">
+            Hello, <span className="font-[700]">Meet John Ossai</span>
           </h1>
           <h1
             data-aos="fade-down"
             data-aos-duration="1000"
-            className="hero-text relative text-center z-10 text-[45px]  md:text-[112px] font-bold leading-[110.5%] "
+            className="hero-text relative text-center z-10 text-[45px] mt-[1.7rem]  md:text-[112px] font-bold leading-[95%] "
           >
             Frontend
           </h1>
@@ -25,7 +26,7 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="200"
-            className="hero-text-gr tracking-widest text-center text-blue-500 relative z-10 text-[45px]  md:text-[112px] font-bold leading-[95%] tracking-widest"
+            className="hero-text-gr text-center text-blue-500 relative z-10 text-[45px]  md:text-[112px] font-bold leading-[95%]"
           >
             Developer
           </h1>
@@ -33,16 +34,16 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="400"
-            className="text-[15px] text-center relative z-10 md:text-[15px] tracking-widest font-light text-text_dsc_clr w-full md:w-[731px] mx-auto mt-[1.5rem]"
+            className="text-[15px] text-center relative z-10 md:text-[15px] tracking-widest font-light text-text_dsc_clr w-full md:w-[731px] mx-auto mt-[1.7rem]"
           >
             Hello, I&apos;m <span className="text-blue-500">John Ossai</span>, a
             passionate and innovative frontend developer who transforms ideas
             into captivating digital experiences. With a dynamic career spanning
             two years in the ever-evolving world of web development.
           </p>
-          <div className="flex justify-center">
+          <div className="mt-[1.7rem] flex justify-center">
             <Link
-              className="mt-[1.5rem] hover:bg-gray-100 transition-all font-[600] rounded-[.5rem] inline-block bg-white py-[.8rem] px-[1rem] text-black"
+              className=" hover:bg-gray-100 transition-all font-[600] rounded-[.5rem] inline-block bg-white py-[.8rem] px-[1rem] text-black"
               href="/readmore"
             >
               Scroll to Read More

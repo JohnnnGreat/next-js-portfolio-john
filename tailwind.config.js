@@ -16,7 +16,7 @@ module.exports = {
       colors: {
         primary_bg_clr: "#141414",
         text_clr: "#ffffff",
-        text_dsc_clr: "#847c7c",
+        text_dsc_clr: "#ffffff99",
         text_accent: "#0047ff",
       },
 
