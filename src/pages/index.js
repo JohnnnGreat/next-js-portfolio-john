@@ -9,27 +9,53 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <>
-      <section className="sm:w-full bg-primary_bg_clr py-[5rem] md:py-[0rem] h-[70vh] md:h-[100vh] w-[100%] overflow-hidden text-white flex items-center relative">
+      <section className="sm:w-full bg-primary_bg_clr py-[5rem] md:py-[0rem] h-[100vh] md:h-[100vh] w-[100%] overflow-hidden text-white flex items-center relative">
         <div className="max-w-[1100px] w-full mx-auto p-[1rem] md:p-[0rem]">
-          <h1 className="hero-text relative z-10 text-[45px]  md:text-[112px] font-bold leading-[110.5%] tracking-widest">
-            FRONTEND DEVELOPER.
+          <h1 className="uppercase text-[16px] text-center text-gray-500  pl-[4px]  font-[600] tracking-widest">
+            Hello, I'm
           </h1>
-          <p className="text-[15px] relative z-10 md:text-[16px] font-light text-white w-full md:w-[731px] mt-[1.6rem]">
+          <h1
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            className="hero-text relative text-center z-10 text-[45px]  md:text-[112px] font-bold leading-[110.5%] "
+          >
+            Frontend
+          </h1>
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            className="hero-text-gr tracking-widest text-center text-blue-500 relative z-10 text-[45px]  md:text-[112px] font-bold leading-[95%] tracking-widest"
+          >
+            Developer
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+            className="text-[15px] text-center relative z-10 md:text-[15px] tracking-widest font-light text-text_dsc_clr w-full md:w-[731px] mx-auto mt-[1.5rem]"
+          >
             Hello, I&apos;m <span className="text-blue-500">John Ossai</span>, a
             passionate and innovative frontend developer who transforms ideas
             into captivating digital experiences. With a dynamic career spanning
             two years in the ever-evolving world of web development.
           </p>
-
-          <div className="absolute bottom-[10px]">
-            <p className="text-white font-[14px] font-[300]">SCROLL</p>
+          <div className="flex justify-center">
+            <Link
+              className="mt-[1.5rem] hover:bg-gray-100 transition-all font-[600] rounded-[.5rem] inline-block bg-white py-[.8rem] px-[1rem] text-black"
+              href="/readmore"
+            >
+              Scroll to Read More
+            </Link>
           </div>
+
+          <div className=" circle w-[30px] animate-bounce h-[30px] border-red-500 border-[.4rem] rounded absolute right-[1rem] top-[50%]"></div>
         </div>
       </section>
       {/* //Projects Section */}
       <div className="h-fit overflow-hidden h-[130vh] py-[5rem] md:py-[0rem] bg-black flex items-center">
         <div className="w-full">
-          <div className="max-w-[1100px]  mx-auto p-[1rem] md:p-[0rem]">
+          <div className="max-w-[1100px] mx-auto p-[1rem] md:p-[0rem]">
             <h1
               data-aos="fade-right"
               data-aos-duration="1000"

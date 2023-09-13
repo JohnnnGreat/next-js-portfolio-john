@@ -24,6 +24,9 @@ $text_accent: #0047ff;
   //     }
   //   }
 }
+.hero-text-gr {
+  font-family: MADE OUTER, sans-serif;
+}
 
 .hero-text-two {
   font-family: MADE OUTER, sans-serif;
@@ -49,18 +52,39 @@ $text_accent: #0047ff;
 }
 
 .animation-bl {
-  animation: animate 10s infinite 1s;
+  animation: animate 10s ease infinite 1s;
+}
+.circle {
+  animation: circle 10s infinite;
+}
 
-  @keyframes animate {
-    0% {
-      transform: translateX(0vw);
-    }
-    50% {
-      transform: translateX(100vw);
-    }
+// Micro Animations
 
-    100% {
-      transform: translateX(0vw);
-    }
+@keyframes animate {
+  0% {
+    transform: translateX(0vw);
+  }
+  50% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+// circle animatifon
+
+@keyframes circle {
+  0% {
+    transform: translateY(0px) translateX(0) rotate(0);
+  }
+
+  50% {
+    transform: translateX(-50px) translateY(50px) rotate(45deg);
+  }
+
+  100% {
+    transform: translateY(0px) translateX(0) rotate(0);
   }
 }

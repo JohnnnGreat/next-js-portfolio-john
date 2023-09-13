@@ -18,7 +18,14 @@
 /* Custom Fonts */
 @font-face {
   font-family: "MADE OUTER";
-  src: url("../../public/fonts/made-outer-sans/MADE-OUT-F.otf")
+  src: url("../../public/fonts/made-outer-sans/MBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aeonic";
+  src: url("../../public/fonts/Aerioel/AeonikTRIAL-Light.otf")
     format("opentype");
   font-weight: bold;
   font-style: normal;
@@ -29,8 +36,9 @@
   color: #ffffff; /* Change this to your desired text color */
 }
 
-p {
-  font-family: "Quicksand", sans-serif;
+p,
+a {
+  font-family: "Aeonic", sans-serif;
   font-weight: regular;
   line-height: 1.5;
 }
