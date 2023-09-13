@@ -12,7 +12,7 @@ export default function Home() {
       <section className="sm:w-full bg-primary_bg_clr py-[5rem] md:py-[0rem] h-[100vh] md:h-[100vh] w-[100%] overflow-hidden text-white flex items-center relative">
         <div className="max-w-[1100px] w-full mx-auto p-[1rem] md:p-[0rem]">
           <h1 className="uppercase text-[16px] text-center text-gray-500  pl-[4px]  font-[600] tracking-widest">
-            Hello, I'm
+            Hello, I&apos;m
           </h1>
           <h1
             data-aos="fade-down"
