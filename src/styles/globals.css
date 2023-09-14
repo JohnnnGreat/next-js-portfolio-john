@@ -18,9 +18,8 @@
 /* Custom Fonts */
 @font-face {
   font-family: "MADE OUTER";
-  src: url("../../public/fonts/made-outer-sans/MBold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
+  src: url("../../public/fonts/made-outer-sans/BLACK.otf") format("opentype");
+  font-weight: bolder;
 }
 
 @font-face {
