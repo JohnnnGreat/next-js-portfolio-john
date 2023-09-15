@@ -1,10 +1,7 @@
 import Image from "next/image";
 import arrow from "../../public/assets/arrowM.svg";
 import Link from "next/link";
-import { useEffect, useRef, useLayoutEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { motion } from "framer-motion";
+import { useScroll } from "framer-motion";
 
 export default function Home() {
   return (
@@ -65,7 +62,7 @@ export default function Home() {
       {/* //Projects Section */}
       <div className="h-fit overflow-hidden h-[130vh] py-[5rem] md:py-[4rem] bg-primary_bg_clr flex items-center sticky">
         <div className="w-full">
-          <div className="max-w-[1100px] mx-auto p-[1rem] md:p-[0rem]">
+          <div className="max-w-[1100px]   mx-auto p-[1rem] md:p-[0rem]">
             <h1
               data-aos="fade-right"
               data-aos-duration="1000"
@@ -83,11 +80,11 @@ export default function Home() {
             </h1>
           </div>
           {/* <div className="w-full h-[1px] bg-text_dsc_clr mt-[1.7rem]"></div> */}
-          <div className="grid max-w-[1100px] mx-auto">
+          <div className="grid grid-cols-2 max-w-[1100px] mx-auto">
             <div className="flex items-center border-r-[1px] border-[#847c7c] h-[300px] p-[1rem]">
               <div>
                 <div className="w-[500px] opacity-20 absolute top-[-8rem] right-[-8rem] h-[500px] rounded-[100%] bg-blue-500 blur-[6rem]"></div>
-                <p className="text-[14px] relative z-10 md:text-[15px] tracking-widest font-light text-text_dsc_clr w-full md:w-[731px] mx-auto mt-[1.7rem]">
+                <p className="text-[14px] relative z-10 md:text-[15px] tracking-widest font-light text-text_dsc_clr w-full  mx-auto mt-[1.7rem]">
                   Explore my portfolio of handpicked project highlights, each a
                   testament to my dedication to creating exceptional digital
                   experiences. From sleek and responsive user interfaces to
@@ -109,7 +106,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="flex items-center border-t-[1px] md:border-[0] relative p-[1rem]">
+            <div className=" w-full flex items-center  border-t-[1px] md:border-[0] relative p-[1rem]">
               <div className="flex flex-col ">
                 <Link
                   className="mt-[1.6rem] w-full absolute top-[1rem]  right-[1rem] grow  py-[.7rem] px-[1rem] "
@@ -121,15 +118,23 @@ export default function Home() {
                     src={arrow}
                   ></Image>
                 </Link>
-                <p className="text-[14px] relative z-10 md:text-[15px] tracking-widest font-light text-text_dsc_clr w-full md:w-[731px] mx-auto mt-[1.7rem]">
+                <p className="text-[14px] w-full  text-justify relative z-10 md:text-[15px] tracking-widest font-light text-text_dsc_clr w-full mx-auto mt-[1.7rem]">
                   My past projects spans across developing intuitive websites,
                   designing websites prototypes, an user interface designs for
                   future projects.
                 </p>
               </div>
+              <h2>john</h2>
             </div>
           </div>
           <div className="w-full h-[1px] bg-text_dsc_clr "></div>
+          <div className="w-full h-[100vh]">
+            <div className="max-w-[1200px] mx-auto">
+              <div className="">
+                <h1>MY EXPERTISES</h1>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

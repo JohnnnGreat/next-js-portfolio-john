@@ -44,12 +44,15 @@ $text_accent: #0047ff;
 
 .header {
   width: 100% !important;
-  height: 100px;
+  height: 70px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
-
+  background: rgba(10, 10, 10, 0.034);
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(30px);
   .wrapper {
     max-width: 1200px;
     margin: auto;
@@ -92,4 +95,9 @@ $text_accent: #0047ff;
   100% {
     transform: translateY(0px) translateX(0) rotate(0);
   }
+}
+
+.toggle {
+  opacity: 0;
+  transition: 300ms ease-in;
 }
