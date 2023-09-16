@@ -3,6 +3,7 @@ import Link from "next/link";
 
 function Header() {
   const [active, setActive] = React.useState(false);
+  const [navOpen, setNavOpen] = React.useState(false);
 
   const isActive = () => {
     window.scrollY > 0 ? setActive(true) : setActive(false);
@@ -20,7 +21,7 @@ function Header() {
         <h1 className="logo-text">
           John<span>Ossai.</span>
         </h1>
-        <nav>
+        <nav className={navOpen && "toggleNav"}>
           <ul>
             <li>
               <Link className="link-nav" href="/">
@@ -49,7 +50,14 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <button className="nav-menu">Menu</button>
+        <button
+          className="nav-menu"
+          onClick={() => {
+            setNavOpen(!navOpen);
+          }}
+        >
+          Menu
+        </button>
       </div>
     </div>
   );
