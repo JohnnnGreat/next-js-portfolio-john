@@ -19,6 +19,10 @@ $bg-clr: #595945;
       font-weight: bold;
       text-align: center;
       color: #262318;
+
+      @media (max-width: 567px) {
+        font-size: 46px;
+      }
     }
 
     .desc {
@@ -110,7 +114,7 @@ nav {
   border-radius: 10px;
 
   @media (max-width: 567px) {
-    width: 80%;
+    width: 90%;
   }
   ul {
     display: flex;
