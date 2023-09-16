@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function Header() {
   const [active, setActive] = React.useState(false);
@@ -14,14 +15,41 @@ function Header() {
     };
   });
   return (
-    <div
-      className={`header text-red-500 fixed top-0 w-full ${active && "toggle"}`}
-    >
-      <div className="wrapper o p-[1rem] flex items-center justify-between">
-        <h1 className="text-white">
-          John <span className="text-red-500"></span>Ossai
+    <div className="header">
+      <div className="header-wrapper">
+        <h1 className="logo-text">
+          John<span>Ossai.</span>
         </h1>
-        <button className="text-white">Open</button>
+        <nav>
+          <ul>
+            <li>
+              <Link className="link-nav" href="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className="link-nav" href="/">
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link className="link-nav" href="/">
+                Education
+              </Link>
+            </li>
+            <li>
+              <Link className="link-nav" href="/">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link className="link-nav" href="/">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <button className="nav-menu">Menu</button>
       </div>
     </div>
   );

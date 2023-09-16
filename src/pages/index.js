@@ -4,6 +4,7 @@ import Image from "next/image";
 import Facebook from "../../public/Facebook.svg";
 import React from "react";
 import Link from "next/link";
+import PortImage from "../../public/johnport.jpg";
 
 export default function Home() {
   const [showOthers, setShowOthers] = React.useState(false);
@@ -15,91 +16,48 @@ export default function Home() {
       }, 4000);
     }
   });
+
+  const [isLoaded, setIsLoaded] = React.useState(false);
+
+  const setActive = () => {
+    setIsLoaded(true);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("load", setActive);
+  });
   return (
     <>
-      <div className="home">
-        {/* Logo Name */}
-        <h1 className="logo">
-          John<span>Ossai.</span>
-        </h1>
-        {/* Navigation */}
-        <div className="nav  className='link'flex items-center justify-center w-full">
-          <nav>
-            <ul>
-              <li>
-                <Link className="link" href="/">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link className="link" href="/">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link className="link" href="/">
-                  Skills
-                </Link>
-              </li>
-              <li>
-                <Link className="link" href="/">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div className="home__wrapper">
-          <div className="home__wrapper_">
-            <h1 className="first-tag">
-              Hi, <span className="span-white">I am</span> John
-            </h1>
-            <p className="desc">
-              A passionate and innovative frontend developer who transforms
-              ideas into captivating digital experiences. With a dynamic career
-              spanning two years in the ever-evolving world of web development.
-            </p>
-            <div className="social-media-links">
-              <div
-                className={`q w-[77px] overflow-hidden  ${
-                  showOthers && "showItems"
-                }`}
-              >
-                <div className="flex items-center w-[300px] gap-[.6rem] ">
-                  <div
-                    className="first"
-                    onClick={() => {
-                      setShowOthers(true);
-                    }}
-                  >
-                    <Image src={Facebook} alt="facebook"></Image>
-                  </div>
-                  <i
-                    class={`ri-arrow-right-s-line ${showOthers && "none"}`}
-                  ></i>
-                  <div className={`default `}>
-                    <div className="first">
-                      <Image src={Facebook} alt="facebook"></Image>
-                    </div>
-                    <div className="first">
-                      <Image src={Facebook} alt="facebook"></Image>
-                    </div>
-                    <div className="first">
-                      <Image src={Facebook} alt="facebook"></Image>
-                    </div>
-                    <i
-                      class={`ri-arrow-right-s-line `}
-                      onClick={() => {
-                        setShowOthers(false);
-                      }}
-                    ></i>
-                  </div>
-                </div>
-              </div>
+      <div className={`preloader ${isLoaded && "hide-preloader"}`}>
+        <div className="rotate animate-spin"></div>
+      </div>
+
+      {isLoaded && (
+        // Home
+        <div className="home">
+          <div className="first">
+            <Image className="img" src={PortImage}></Image>
+            <h1>JOHN OSSAI</h1>
+          </div>
+          <div className="second">
+            <div className="second-container">
+              <h1 className="meet-john">Meet John</h1>
+              <h1 className="title-tag">Frontend Developer.</h1>
+              <h1 className="title-tag">Ui Designer</h1>
+              <p className="desc-tag">
+                A passionate and innovative frontend developer who transforms
+                ideas into captivating digital experiences. With a dynamic
+                career spanning two years in the ever-evolving world of web
+                development.
+              </p>
+              <Link className="link" href="/sc">
+                Have a tour
+              </Link>
             </div>
           </div>
         </div>
-      </div>
+      )}
+      {/* Home Section */}
     </>
   );
 }

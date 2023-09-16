@@ -18,6 +18,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../public/fonts/montserrat/Montserrat-Medium.ttf")
+    format("opentype");
+  font-weight: medium;
+  font-style: normal;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
 h1 {
   font-family: "Montserrat", sans-serif;
 }
