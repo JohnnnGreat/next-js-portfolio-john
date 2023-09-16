@@ -4,6 +4,7 @@ $bg-clr: #595945;
   height: 100vh;
   overflow: hidden;
   background-color: $bg-clr;
+  position: relative;
 
   &__wrapper {
     max-width: 1100px;
@@ -131,7 +132,7 @@ nav {
         justify-content: center;
         font-weight: 600;
         color: #d9d9d9;
-        text-transform: uppercase;
+
         letter-spacing: 1px;
 
         &:hover {

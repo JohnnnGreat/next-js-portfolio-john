@@ -18,9 +18,9 @@ export default function Home() {
   return (
     <>
       <div className="home">
-        \{/* Logo Name */}
+        {/* Logo Name */}
         <h1 className="logo">
-          John <span>Ossai.</span>
+          John<span>Ossai.</span>
         </h1>
         {/* Navigation */}
         <div className="nav  className='link'flex items-center justify-center w-full">
@@ -28,7 +28,7 @@ export default function Home() {
             <ul>
               <li>
                 <Link className="link" href="/">
-                  HOME
+                  Home
                 </Link>
               </li>
               <li>
@@ -65,7 +65,7 @@ export default function Home() {
                   showOthers && "showItems"
                 }`}
               >
-                <div className="flex items-center w-[300px] gap-[.3rem] ">
+                <div className="flex items-center w-[300px] gap-[.6rem] ">
                   <div
                     className="first"
                     onClick={() => {
