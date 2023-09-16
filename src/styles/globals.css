@@ -2,58 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-/* Custom Fonts */
-@font-face {
-  font-family: "MADE OUTER";
-  src: url("../../public/fonts/made-outer-sans/BLACK.otf") format("opentype");
-  font-weight: bolder;
+  box-sizing: border-box;
 }
 
 @font-face {
-  font-family: "Aeonic";
-  src: url("../../public/fonts/Aerioel/AeonikTRIAL-Light.otf")
+  font-family: "Montserrat";
+  src: url("../../public/fonts/montserrat/Montserrat-Bold.ttf")
     format("opentype");
-  font-weight: bold;
+  font-weight: 100;
   font-style: normal;
 }
 
-::selection {
-  background-color: #363636; /* Change this to your desired background color */
-  color: #ffffff; /* Change this to your desired text color */
-}
-
-p,
-a {
-  font-family: "Aeonic", sans-serif;
-  font-weight: regular;
-  line-height: 1.5;
-}
-
-.link {
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.d {
-  background: #141414;
-}
-
-body {
-  background: #141414;
+h1 {
+  font-family: "Montserrat", sans-serif;
 }

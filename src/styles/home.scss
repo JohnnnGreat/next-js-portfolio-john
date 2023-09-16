@@ -1,0 +1,140 @@
+$bg-clr: #595945;
+
+.home {
+  height: 100vh;
+  overflow: hidden;
+  background-color: $bg-clr;
+
+  &__wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    .first-tag {
+      font-size: 64px;
+      font-weight: bold;
+      text-align: center;
+      color: #262318;
+    }
+
+    .desc {
+      font-size: 20px;
+      color: #a5a68d;
+      text-align: center;
+
+      @media (max-width: 567px) {
+        font-size: 15px;
+      }
+    }
+
+    .social-media-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+
+      .first {
+        background-color: #fff;
+        border-radius: 100%;
+        width: 46px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      i {
+        color: #d9d9d9;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+// Unitility Classes
+
+.span-white {
+  color: #a5a68d;
+}
+
+.logo {
+  color: #d9d9d9;
+  position: fixed;
+  top: 4rem;
+  left: 4rem;
+
+  span {
+    color: #262318;
+  }
+}
+
+.default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+
+  overflow: hidden;
+  transition: 300ms ease;
+}
+
+.showItems {
+  width: 230px !important;
+  transition: 300ms ease;
+}
+
+.none {
+  display: none;
+}
+
+.q {
+  transition: 300ms ease;
+}
+
+.nav {
+  position: absolute;
+  bottom: 1rem;
+}
+nav {
+  background-color: #595945;
+  border: 3px solid #a5a68d;
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  width: 500px;
+  margin: auto;
+  border-radius: 10px;
+
+  @media (max-width: 567px) {
+    width: 80%;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+
+    li {
+      .link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        color: #d9d9d9;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:hover {
+          color: #a5a68d;
+          transition: 300ms ease-in;
+        }
+      }
+    }
+  }
+}

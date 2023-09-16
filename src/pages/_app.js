@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import "@/styles/index.scss";
+import "@/styles/home.scss";
 import Header from "@/layout/Header";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,8 +13,7 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <>
-      <Header />
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }
